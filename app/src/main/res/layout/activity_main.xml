@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context="com.example.hardik.calculator.MainActivity"
+    >
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="right"
+        android:textSize="25dp"
+        android:textColor="#ffffff"
+        android:cursorVisible="false"
+        android:id="@+id/editText"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="75dp"
+        android:text="1"
+        android:textColor="#2658d6"
+        android:gravity="center"
+        android:id="@+id/num1"
+        android:textSize="50dp"
+        android:layout_above="@+id/num4"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="75dp"
+        android:text="2"
+        android:textSize="50dp"
+        android:textColor="#2658d6"
+        android:id="@+id/num2"
+        android:layout_below="@+id/signtific"
+        android:layout_alignLeft="@+id/num5"
+        android:layout_alignStart="@+id/num5" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="75dp"
+        android:text="3"
+        android:textSize="50dp"
+        android:textColor="#2658d6"
+        android:id="@+id/num3"
+        android:layout_below="@+id/signtific"
+        android:layout_alignLeft="@+id/num6"
+        android:layout_alignStart="@+id/num6" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="75dp"
+        android:text="4"
+        android:textSize="50dp"
+        android:textColor="#2658d6"
+        android:id="@+id/num4"
+        android:layout_above="@+id/num7"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="75dp"
+        android:text="5"
+        android:textSize="50dp"
+        android:textColor="#2658d6"
+        android:id="@+id/num5"
+        android:layout_below="@+id/num3"
+        android:layout_alignLeft="@+id/num8"
+        android:layout_alignStart="@+id/num8" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="75dp"
+        android:text="6"
+        android:textSize="50dp"
+        android:textColor="#2658d6"
+        android:id="@+id/num6"
+        android:layout_below="@+id/num1"
+        android:layout_alignLeft="@+id/num9"
+        android:layout_alignStart="@+id/num9" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="75dp"
+        android:text="7"
+        android:textSize="50dp"
+        android:textColor="#2658d6"
+        android:id="@+id/num7"
+        android:layout_above="@+id/numDot"
+        android:layout_alignLeft="@+id/num4"
+        android:layout_alignStart="@+id/num4" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="75dp"
+        android:text="8"
+        android:textSize="50dp"
+        android:id="@+id/num8"
+        android:textColor="#2658d6"
+        android:layout_above="@+id/num0"
+        android:layout_alignLeft="@+id/num0"
+        android:layout_alignStart="@+id/num0" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="75dp"
+        android:text="9"
+        android:textSize="50dp"
+        android:id="@+id/num9"
+        android:textColor="#2658d6"
+        android:layout_above="@+id/num0"
+        android:layout_toRightOf="@+id/num8"
+        android:layout_toEndOf="@+id/num8" />
+
+    <Button
+        android:layout_width="162dp"
+        android:layout_height="75dp"
+        android:text="0"
+        android:textColor="#2658d6"
+        android:textSize="50dp"
+        android:id="@+id/num0"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/num7"
+        android:layout_toEndOf="@+id/num7" />
+
+    <Button
+        android:layout_width="82dp"
+        android:layout_height="75dp"
+        android:text="."
+        android:textSize="50dp"
+        android:textColor="#2658d6"
+        android:id="@+id/numDot"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="75dp"
+        android:layout_height="74dp"
+        android:text="="
+        android:textSize="50dp"
+        android:id="@+id/numEqu"
+        android:background="#de7e16"
+        android:layout_alignBaseline="@+id/num0"
+        android:layout_alignBottom="@+id/num0"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="75dp"
+        android:layout_height="74dp"
+        android:text="\u00F7"
+        android:textSize="50dp"
+        android:id="@+id/Dvd"
+        android:background="#de7e16"
+        android:layout_above="@+id/Multi"
+        android:layout_alignLeft="@+id/Multi"
+        android:layout_alignStart="@+id/Multi" />
+
+    <Button
+        android:layout_width="75dp"
+        android:layout_height="74dp"
+        android:text="\u00D7"
+        android:textSize="50dp"
+        android:id="@+id/Multi"
+        android:background="#de7e16"
+        android:layout_above="@+id/minuse"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="75dp"
+        android:layout_height="74dp"
+        android:text="+"
+        android:textSize="50dp"
+        android:id="@+id/pluse"
+        android:background="#de7e16"
+        android:layout_above="@+id/numEqu"
+        android:layout_alignLeft="@+id/numEqu"
+        android:layout_alignStart="@+id/numEqu" />
+
+    <Button
+        android:layout_width="75dp"
+        android:layout_height="74dp"
+        android:text="-"
+        android:textSize="50dp"
+        android:id="@+id/minuse"
+        android:background="#de7e16"
+        android:layout_above="@+id/pluse"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="75dp"
+        android:text="Scientific"
+        android:id="@+id/signtific"
+        android:textSize="9dp"
+        android:layout_above="@+id/num1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="75dp"
+        android:text="C"
+        android:textSize="50dp"
+        android:id="@+id/clear"
+        android:layout_alignTop="@+id/signtific"
+        android:layout_alignLeft="@+id/num2"
+        android:layout_alignStart="@+id/num2" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="75dp"
+        android:text="Delete"
+        android:textSize="14dp"
+        android:id="@+id/delete"
+        android:layout_alignTop="@+id/clear"
+        android:layout_alignLeft="@+id/num3"
+        android:layout_alignStart="@+id/num3" />
+
+
+
+</RelativeLayout>
